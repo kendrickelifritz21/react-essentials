@@ -52,6 +52,7 @@ function App() {
             </ul>
           </section>
           <br />
+          <br />
           <h2>Time to get started!</h2>
         </main>
       </div>
