@@ -5,7 +5,7 @@ type TabButtonProps = {
     isSelected: boolean
 }
 
-export default function TabButton({ children, onClick, isSelected }: PropsWithChildren<TabButtonProps>) {
+export default function TabButton({ onClick, isSelected, children }: PropsWithChildren<TabButtonProps>) {
     return (
         <li>
             <button className={isSelected ? "active" : ""} onClick={onClick}>{children}</button>

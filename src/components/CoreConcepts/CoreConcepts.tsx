@@ -1,17 +1,15 @@
-import './CoreConcepts.css'
+import { CORE_CONCEPTS } from "../../data"
+import CoreConcept from "./CoreConcept"
+import Section from "../Section";
 
-export type CoreConceptProps = {
-  title: string
-  description: string
-  image: string
-}
-
-export default function CoreConcept({ title, description, image }: CoreConceptProps) {
+export default function CoreConcepts() {
   return (
-    <li>
-      <img src={image} alt={title}></img>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
+    <Section title="Core Concepts" id="core-concepts">
+      <ul>
+        {CORE_CONCEPTS.map((coreConcept) => (
+          <CoreConcept key={coreConcept.title} {...coreConcept} />
+        ))}
+      </ul>
+    </Section>
   );
 }

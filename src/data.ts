@@ -2,8 +2,8 @@ import componentsImg from './assets/components.png';
 import propsImg from './assets/config.png';
 import jsxImg from './assets/jsx-ui.png';
 import stateImg from './assets/state-mgmt.png';
-import { CoreConceptProps } from './components/CoreConcepts/CoreConcepts';
-import { ExampleType } from './components/Examples/Examples'
+import { CoreConceptProps } from './components/CoreConcepts/CoreConcept';
+import { ExampleType } from './components/Examples/Example'
 
 export const CORE_CONCEPTS: CoreConceptProps[] = [
   {
